@@ -1,5 +1,5 @@
 # FFVDD assignment 1
-ffvdd assignment 1\
+FFVDD assignment 1\
 Debouncing circuit\
 Output waveform:\
 ![WhatsApp Image 2023-10-21 at 1 11 39 PM](https://github.com/venkatraghavv/ffvdd_a1/assets/121925910/adf81150-9d6b-427a-abdc-7f37802dcda4)
