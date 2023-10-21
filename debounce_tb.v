@@ -26,44 +26,41 @@ module debounce_tb;
 
    for (i= 0; i <= 15; i = i + 1)
    begin
-      // Apply sw and/or reset as needed to transition
       case (i)
         0: begin
           sw = 1;
           #10 sw = 0;
-        end // zero -> wait1_1
+        end 
         1: begin
           sw = 0;
           #10 sw = 1;
-        end // wait1_1 -> zero
+        end 
         2: begin
           sw = 1;
           #10 sw = 0;
-        end // wait1_1 -> wait1_2
+        end 
         3: begin
           sw = 0;
           #10 sw = 1;
-        end // wait1_2 -> zero
+        end 
         4: begin
           sw = 1;
           #10 sw = 0;
-        end // wait1_2 -> wait1_3
+        end 
         5: begin
           sw = 0;
           #10 sw = 1;
-        end // wait1_3 -> zero
+        end 
         6: begin
           sw = 1;
           #10 sw = 0;
-        end // wait1_3 -> one
+        end 
         7: begin
-          sw = ~sw; // Simulate switch bounce
+          sw = ~sw; 
           #5 sw = ~sw;
-          #5 reset=1; // Simultaneous switch bounce and reset
+          #5 reset=1; 
           #10 reset=0;
-        end// one -> zero
-        // Repeat the above steps with different timing to cover more cases.
-        // ...
+        end
       endcase
     end
 
