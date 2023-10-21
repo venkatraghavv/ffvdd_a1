@@ -1,4 +1,4 @@
-# ffvdd_a1
+# FFVDD assignment 1
 ffvdd assignment 1\
 Debouncing circuit\
 Output waveform:\
